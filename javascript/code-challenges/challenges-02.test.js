@@ -11,32 +11,46 @@ numbers raised to the 3rd power (hint: look up Math.pow()). Use forEach to solve
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
+  const pow = 3;
+  let arrayRaisedToTheThird = [];
+  arr.forEach((value) => {
+    arrayRaisedToTheThird.push(Math.pow(value, pow));
+  });
+  return arrayRaisedToTheThird;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1. 
+Write a function named addOne that, given an array of numbers, uses map to return a new array with each value 
+simply incremented by 1. 
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
   // Solution code here...
+  let arrAddOne = arr.map(value => value + 1);
+  return arrAddOne;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
+Write a function named addQuestion that, given an array of strings, uses map to return a new array 
+containing each string followed by a question mark character.
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
   // Solution code here...
+  let arrAddQuestion = arr.map(value => value + '?');
+  return arrAddQuestion;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named forLoopTwoToThe that, given an array of integers as input, iterates over the array and returns a new array. The returned array should contain the result of raising 2 to the power of the original input element.
+Write a function named forLoopTwoToThe that, given an array of integers as input, 
+iterates over the array and returns a new array. 
+The returned array should contain the result of raising 2 to the power of the original input element.
 
 You may choose to complete this challenge using a for loop, for...in syntax, or for...of syntax.
 
@@ -45,32 +59,53 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+  const value = 2;
+  let arrForLoopTwoToThe = [];
+  for (let i = 0; i < arr.length; i++) {
+    arrForLoopTwoToThe.push(Math.pow(value, arr[i]));
+  }
+  return arrForLoopTwoToThe;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4, but uses forEach instead of a for loop.
+Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function 
+from challenge 4, but uses forEach instead of a for loop.
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  const value = 2;
+  let arrForEachTwoToThe = [];
+  arr.forEach((pow) => {
+    arrForEachTwoToThe.push(Math.pow(value, pow));
+  });
+  return arrForEachTwoToThe;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4 and your forEachTwoToThe function from challenge 5, but uses map instead of a for loop or forEach.
+Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe function 
+from challenge 4 and your forEachTwoToThe function from challenge 5, 
+but uses map instead of a for loop or forEach.
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  const value = 2;
+  let arrForLoopTwoToThe = arr.map((pow) => {
+    return Math.pow(value, pow);
+  });
+  return arrForLoopTwoToThe;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
-Write a function named charCode that, given an array of letters as an input, uses map to return a new array where each element is the result of the `charCodeAt` method on the original array element.
+Write a function named charCode that, given an array of letters as an input, uses map to return a new array
+where each element is the result of the `charCodeAt` method on the original array element.
 
 Read the MDN documentation on String.charCodeAt() if necessary.
 

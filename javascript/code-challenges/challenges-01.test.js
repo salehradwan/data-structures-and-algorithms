@@ -12,11 +12,11 @@ Push the new value into a local array. Return the local array;
 
 const addOne = (arr) => {
   // Solution code here...
+  
   let localArray = [];
   arr.forEach(element => {
     localArray.push(Number(element) + 1);
   });
-
   return localArray;
 };
 
