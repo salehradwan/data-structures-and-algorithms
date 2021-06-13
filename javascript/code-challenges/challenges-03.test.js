@@ -93,40 +93,40 @@ Write a function named getBaseStatGreaterThan that, given the snorlaxData, below
 For example, getBaseStatGreaterThan(snorlaxData.stats, 50) will return an array containing the 'special-defense' and 'special-attack' objects.
 ------------------------------------------------------------------------------------------------ */
 
-const snorlaxData = {
-  stats: [
-    {
-      stat: {
-        url: 'https://pokeapi.co/api/v2/stat/6/',
-        name: 'speed',
-      },
-      effort: 5,
-      baseStat: 30,
-    },
-    {
-      stat: {
-        url: 'https://pokeapi.co/api/v2/stat/5/',
-        name: 'special-defense',
-      },
-      effort: 2,
-      baseStat: 110,
-    },
-    {
-      stat: {
-        url: 'https://pokeapi.co/api/v2/stat/4/',
-        name: 'special-attack',
-      },
-      effort: 9,
-      baseStat: 65,
-    },
-  ],
-  name: 'snorlax',
-  weight: 4600,
-};
+// const snorlaxData = {
+//   stats: [
+//     {
+//       stat: {
+//         url: 'https://pokeapi.co/api/v2/stat/6/',
+//         name: 'speed',
+//       },
+//       effort: 5,
+//       baseStat: 30,
+//     },
+//     {
+//       stat: {
+//         url: 'https://pokeapi.co/api/v2/stat/5/',
+//         name: 'special-defense',
+//       },
+//       effort: 2,
+//       baseStat: 110,
+//     },
+//     {
+//       stat: {
+//         url: 'https://pokeapi.co/api/v2/stat/4/',
+//         name: 'special-attack',
+//       },
+//       effort: 9,
+//       baseStat: 65,
+//     },
+//   ],
+//   name: 'snorlax',
+//   weight: 4600,
+// };
 
-const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  // Solution code here...
-};
+// const getBaseStatGreaterThan = (arr, minBaseStat) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -136,9 +136,9 @@ Write a function named getStatName that is an extension of your getBaseStatGreat
 For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 'special-attack'].
 ------------------------------------------------------------------------------------------------ */
 
-const getStatName = (arr, minBaseStat) => {
-  // Solution code here...
-};
+// const getStatName = (arr, minBaseStat) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
@@ -146,52 +146,52 @@ CHALLENGE 8 - Stretch Goal
 Write a function named getCharactersWithoutChildren that, given the array of characters, below, uses filter to return an array of all characters without children.
 ------------------------------------------------------------------------------------------------ */
 
-const characters = [
-  {
-    name: 'Eddard',
-    spouse: 'Catelyn',
-    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-    house: 'Stark',
-  },
-  {
-    name: 'Jon',
-    spouse: 'Lysa',
-    children: ['Robin'],
-    house: 'Arryn',
-  },
-  {
-    name: 'Cersei',
-    spouse: 'Robert',
-    children: ['Joffrey', 'Myrcella', 'Tommen'],
-    house: 'Lannister',
-  },
-  {
-    name: 'Daenarys',
-    spouse: 'Khal Drogo',
-    children: ['Drogon', 'Rhaegal', 'Viserion'],
-    house: 'Targaryen',
-  },
-  {
-    name: 'Mace',
-    spouse: 'Alerie',
-    children: ['Margaery', 'Loras'],
-    house: 'Tyrell',
-  },
-  {
-    name: 'Sansa',
-    spouse: 'Tyrion',
-    house: 'Stark',
-  },
-  {
-    name: 'Jon',
-    spouse: null,
-    house: 'Snow',
-  },
-];
+// const characters = [
+//   {
+//     name: 'Eddard',
+//     spouse: 'Catelyn',
+//     children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+//     house: 'Stark',
+//   },
+//   {
+//     name: 'Jon',
+//     spouse: 'Lysa',
+//     children: ['Robin'],
+//     house: 'Arryn',
+//   },
+//   {
+//     name: 'Cersei',
+//     spouse: 'Robert',
+//     children: ['Joffrey', 'Myrcella', 'Tommen'],
+//     house: 'Lannister',
+//   },
+//   {
+//     name: 'Daenarys',
+//     spouse: 'Khal Drogo',
+//     children: ['Drogon', 'Rhaegal', 'Viserion'],
+//     house: 'Targaryen',
+//   },
+//   {
+//     name: 'Mace',
+//     spouse: 'Alerie',
+//     children: ['Margaery', 'Loras'],
+//     house: 'Tyrell',
+//   },
+//   {
+//     name: 'Sansa',
+//     spouse: 'Tyrion',
+//     house: 'Stark',
+//   },
+//   {
+//     name: 'Jon',
+//     spouse: null,
+//     house: 'Snow',
+//   },
+// ];
 
-const getCharactersWithoutChildren = (arr) => {
-  // Solution code here...
-};
+// const getCharactersWithoutChildren = (arr) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -201,9 +201,9 @@ Write a function named evenOddNumericValues that, given an array as input, uses 
 For example: evenOddNumericValues(['Gregor', 2, 4, 1]) returns ['even', 'even', 'odd'].
 ------------------------------------------------------------------------------------------------ */
 
-const evenOddNumericValues = (arr) => {
-  // Solution code here...
-};
+// const evenOddNumericValues = (arr) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -273,52 +273,52 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
-  test('It should return an array containing the stats that are greater than the input', () => {
-    expect(getBaseStatGreaterThan(snorlaxData.stats, 75)).toStrictEqual([ { stat: { url: 'https://pokeapi.co/api/v2/stat/5/', name: 'special-defense' }, effort: 2, baseStat: 110 } ]);
-    expect(getBaseStatGreaterThan(snorlaxData.stats, 75).length).toStrictEqual(1);
-    expect(getBaseStatGreaterThan(snorlaxData.stats, 110)).toStrictEqual([]);
-  });
-  test('It should work for non-Snorlax data', () => {
-    expect(getBaseStatGreaterThan([{baseStat: 10}, {baseStat: -85}, {baseStat: 0}, {baseStat: -50}], -60)).toStrictEqual([{baseStat: 10}, {baseStat: 0}, {baseStat: -50}]);
-  });
-});
+// xdescribe('Testing challenge 6', () => {
+//   test('It should return an array containing the stats that are greater than the input', () => {
+//     expect(getBaseStatGreaterThan(snorlaxData.stats, 75)).toStrictEqual([ { stat: { url: 'https://pokeapi.co/api/v2/stat/5/', name: 'special-defense' }, effort: 2, baseStat: 110 } ]);
+//     expect(getBaseStatGreaterThan(snorlaxData.stats, 75).length).toStrictEqual(1);
+//     expect(getBaseStatGreaterThan(snorlaxData.stats, 110)).toStrictEqual([]);
+//   });
+//   test('It should work for non-Snorlax data', () => {
+//     expect(getBaseStatGreaterThan([{baseStat: 10}, {baseStat: -85}, {baseStat: 0}, {baseStat: -50}], -60)).toStrictEqual([{baseStat: 10}, {baseStat: 0}, {baseStat: -50}]);
+//   });
+// });
 
-xdescribe('Testing challenge 7', () => {
-  test('It should return the name of the stats that exceed that maximum', () => {
-    expect(getStatName(snorlaxData.stats, 50)).toStrictEqual([ 'special-defense', 'special-attack' ]);
-    expect(getStatName(snorlaxData.stats, 50).length).toStrictEqual(2);
-  });
+// xdescribe('Testing challenge 7', () => {
+//   test('It should return the name of the stats that exceed that maximum', () => {
+//     expect(getStatName(snorlaxData.stats, 50)).toStrictEqual([ 'special-defense', 'special-attack' ]);
+//     expect(getStatName(snorlaxData.stats, 50).length).toStrictEqual(2);
+//   });
 
-  test('It should return the name of the stats that exceed that maximum', () => {
-    expect(getStatName(snorlaxData.stats, 120)).toStrictEqual([]);
-    expect(getStatName(snorlaxData.stats, 120).length).toStrictEqual(0);
-  });
+//   test('It should return the name of the stats that exceed that maximum', () => {
+//     expect(getStatName(snorlaxData.stats, 120)).toStrictEqual([]);
+//     expect(getStatName(snorlaxData.stats, 120).length).toStrictEqual(0);
+//   });
 
-  test('It should work for non-snorlax data', () => {
-    expect(getStatName([
-      {baseStat: 10, stat: {name: 'one'}},
-      {baseStat: -85, stat: {name: 'two'}},
-      {baseStat: 0, stat: {name: 'three'}},
-      {baseStat: -50, stat: {name: 'four'}}
-    ], -60)).toStrictEqual(['one', 'three', 'four']);
-  });
-});
+//   test('It should work for non-snorlax data', () => {
+//     expect(getStatName([
+//       {baseStat: 10, stat: {name: 'one'}},
+//       {baseStat: -85, stat: {name: 'two'}},
+//       {baseStat: 0, stat: {name: 'three'}},
+//       {baseStat: -50, stat: {name: 'four'}}
+//     ], -60)).toStrictEqual(['one', 'three', 'four']);
+//   });
+// });
 
-xdescribe('Testing challenge 8', () => {
-  test('It should return an array containing characters who do not have children', () => {
-    expect(getCharactersWithoutChildren(characters)).toStrictEqual([ { name: 'Sansa', spouse: 'Tyrion', house: 'Stark' }, { name: 'Jon', spouse: null, house: 'Snow' } ]);
-    expect(getCharactersWithoutChildren(characters).length).toStrictEqual(2);
-  });
-});
+// xdescribe('Testing challenge 8', () => {
+//   test('It should return an array containing characters who do not have children', () => {
+//     expect(getCharactersWithoutChildren(characters)).toStrictEqual([ { name: 'Sansa', spouse: 'Tyrion', house: 'Stark' }, { name: 'Jon', spouse: null, house: 'Snow' } ]);
+//     expect(getCharactersWithoutChildren(characters).length).toStrictEqual(2);
+//   });
+// });
 
-xdescribe('Testing challenge 9', () => {
-  test('It should remove non-integers and return "even" or "odd', () => {
-    expect(evenOddNumericValues(['Gregor', 2, 4, 1])).toStrictEqual(['even', 'even', 'odd']);
-    expect(evenOddNumericValues(['Gregor', 2, 4, 1]).length).toStrictEqual(3);
-    expect(evenOddNumericValues(['a', 'b', 'c'])).toStrictEqual([]);
-  });
-  test('It should not accept strings that look like numbers', () => {
-    expect(evenOddNumericValues(['1', 2, 3, '4', 5,'6'])).toStrictEqual(['even', 'odd', 'odd']);
-  });
-});
+// xdescribe('Testing challenge 9', () => {
+//   test('It should remove non-integers and return "even" or "odd', () => {
+//     expect(evenOddNumericValues(['Gregor', 2, 4, 1])).toStrictEqual(['even', 'even', 'odd']);
+//     expect(evenOddNumericValues(['Gregor', 2, 4, 1]).length).toStrictEqual(3);
+//     expect(evenOddNumericValues(['a', 'b', 'c'])).toStrictEqual([]);
+//   });
+//   test('It should not accept strings that look like numbers', () => {
+//     expect(evenOddNumericValues(['1', 2, 3, '4', 5,'6'])).toStrictEqual(['even', 'odd', 'odd']);
+//   });
+// });
