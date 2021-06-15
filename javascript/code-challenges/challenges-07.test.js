@@ -72,14 +72,15 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-// const howMuchPencil = (str) => {
-//   let result = [];
-//   // Solution code here...
-//   const pencil = str.slice(0,1);
-//   // const rep = pencil.splice(0, 1);
-//   result.push(rep);
-//   return result;
-// };
+const howMuchPencil = (str) => {
+  let result = [];
+  // Solution code here...
+  for (let i = 0; i < str.length + 1; i++) {
+    let sliceS = str.slice(i);
+    result.push(sliceS);
+  }
+  return result;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -143,7 +144,11 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
-  
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    let value = recipe.ingredients[i].slice(recipe.ingredients[i].indexOf(' ')+1);
+    value = value.slice(value.indexOf(' ')+1);
+    result.push(value);
+  }
   return result;
 };
 /*
