@@ -3,13 +3,13 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function named replaceZeros that, given a string, uses Regex to replace all '0' with the word 'zero'. 
+Write a function named replaceZeros that, given a string, uses Regex to replace all '0' with the word 'zero'.
 ------------------------------------------------------------------------------------------------ */
 
 const replaceZeros = (string) => {
   // Solution code here...
   return string.replace(/0/gm, 'zero');
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -106,9 +106,9 @@ For example, findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'
 findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>']) returns ['/h1', '/div', '/p'].
 ------------------------------------------------------------------------------------------------ */
 
-const findTagNames = elements => {
-  // Solution code here...
-};
+// const findTagNames = elements => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -218,11 +218,11 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
-  test('It should return the closing tags', () => {
-    expect(findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/p']);
-  });
-  test('It should work if there are multiple closing tags in a single string', () => {
-    expect(findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/div', '/p']);
-  });
-});
+// xdescribe('Testing challenge 7', () => {
+//   test('It should return the closing tags', () => {
+//     expect(findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/p']);
+//   });
+//   test('It should work if there are multiple closing tags in a single string', () => {
+//     expect(findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/div', '/p']);
+//   });
+// });
